@@ -54,127 +54,12 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.wiki">module wiki</a><ol>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.wiki.Gruntfile">
-            function <span class="apidocSignatureSpan">wiki.</span>Gruntfile
-            <span class="apidocSignatureSpan">( grunt )</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.wiki.Gruntfile">module wiki.Gruntfile</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.wiki.Gruntfile.Gruntfile">
-            function <span class="apidocSignatureSpan">wiki.</span>Gruntfile
-            <span class="apidocSignatureSpan">( grunt )</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.wiki" id="apidoc.module.wiki">module wiki</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.wiki.Gruntfile" id="apidoc.element.wiki.Gruntfile">
-        function <span class="apidocSignatureSpan">wiki.</span>Gruntfile
-        <span class="apidocSignatureSpan">( grunt )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
-
-  "use strict";
-
-  grunt.loadNpmTasks('grunt-git-authors');
-  grunt.loadNpmTasks('grunt-retire');
-  grunt.loadNpmTasks('grunt-nsp');
-
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-    authors: {
-      prior: [
-        "Nick Niemeir &lt;nick.niemeir@gmail.com&gt;",
-        "Ward Cunningham &lt;ward@c2.com&gt;",
-        "Paul Rodwell &lt;paul.rodwell@btinternet.com&gt;"
-      ]
-    },
-
-    retire: {
-      node: ['.'],
-      options: {packageOnly: true}
-    },
-
-    nsp: {
-      package: grunt.file.readJSON('package.json')
-    }
-  });
-
-  grunt.registerTask('check', ['nsp', 'retire']);
-
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wiki.Gruntfile" id="apidoc.module.wiki.Gruntfile">module wiki.Gruntfile</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.wiki.Gruntfile.Gruntfile" id="apidoc.element.wiki.Gruntfile.Gruntfile">
-        function <span class="apidocSignatureSpan">wiki.</span>Gruntfile
-        <span class="apidocSignatureSpan">( grunt )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
-
-  "use strict";
-
-  grunt.loadNpmTasks('grunt-git-authors');
-  grunt.loadNpmTasks('grunt-retire');
-  grunt.loadNpmTasks('grunt-nsp');
-
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-    authors: {
-      prior: [
-        "Nick Niemeir &lt;nick.niemeir@gmail.com&gt;",
-        "Ward Cunningham &lt;ward@c2.com&gt;",
-        "Paul Rodwell &lt;paul.rodwell@btinternet.com&gt;"
-      ]
-    },
-
-    retire: {
-      node: ['.'],
-      options: {packageOnly: true}
-    },
-
-    nsp: {
-      package: grunt.file.readJSON('package.json')
-    }
-  });
-
-  grunt.registerTask('check', ['nsp', 'retire']);
-
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 </div>
 
